@@ -9,9 +9,7 @@ using namespace std;
 
 
 void ejercicio_04(string file){
-	//Leer un archivo de texto plano, letra por letra hasta encontrar un separador (espacio,
-	//tabulador o salto de línea) y mostrar en pantalla si el vocablo se trata de un número
-	//entero, una palabra o un caracter especial (“+”,”-“,”*”,”/”)
+
 	string cadena; 
 	string caracter_especial = "+-*/";
 	ifstream data(file);
@@ -48,11 +46,7 @@ void ejercicio_03_cifrado (string file, int rot){
 
 	string cadena;
 	string alfabeto= " )(][ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz#_.:<>,1234567890=";
-	//Crear un programa que cifre un pseudocódigo y otro que lo descifre, según la técnica del cifrado de César.
-	//El seudocódigo se encuentra en un archivo de texto plano. El
-	//cifrado de César consiste en mover cada letra un determinado número de espacios en
-	//el alfabeto (puede ser 3 espacios)";
- 
+
 	ifstream data(file);
  	ofstream data_cifrada("descifrar.txt"); 
  
@@ -74,10 +68,7 @@ void ejercicio_03_descifrado (string file, int rot){
 
 	string cadena;
 	string alfabeto= " )(][ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz#_.:<>,1234567890=";
-	//Crear un programa que cifre un pseudocódigo y otro que lo descifre, según la técnica del cifrado de César.
-	//El seudocódigo se encuentra en un archivo de texto plano. El
-	//cifrado de César consiste en mover cada letra un determinado número de espacios en
-	//el alfabeto (puede ser 3 espacios)";
+
 	
 
 	ifstream data(file);
