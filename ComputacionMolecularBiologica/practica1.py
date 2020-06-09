@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from Bio import SeqIO
 import matplotlib.pyplot as plt
-import sys
 
 
 def compara(seq1,seq2,t):
@@ -17,8 +16,6 @@ def compara(seq1,seq2,t):
 
 def makeMatrix(seq1,seq2,w,t):
     
-    n = len(seq1)
-    m = len(seq2)
 
     subseq1=[]
     subseq2=[]
@@ -67,8 +64,9 @@ def plotMatrix(M):
     plt.scatter(xs, ys)
     plt.show()
 
-def dotplot(seq1,seq2,w = 10,t = 5):
+def dotplot(seq1,seq2,w,t):
      
+    
     M=makeMatrix(seq1,seq2,w,t)
     plotMatrix(M)
 
@@ -82,8 +80,11 @@ sequences = SeqIO.parse("P21333.fasta.txt","fasta")
 for record in sequences:
     data2=str(record.seq.upper())
 
-print(len(data1))
-print(len(data2))
-dotplot(data1,data2)
+threshold=15 #porcentaje
+window=50
+
+threshold=threshold*window/100
+
+dotplot(data1,data2,window,threshold)
 
 
