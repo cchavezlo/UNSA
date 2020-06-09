@@ -14,7 +14,8 @@ print("Datos de Q8BTM8.fasta")
 print(data2)
 ```
 **Experimentos**
-Comparación de la proteína Filamin-A para humanos ("P21333.fasta") y para ratones ("Q8BTM8").
+
+Comparación de la proteína Filamin-A para ratones ("Q8BTM8") y para humanos ("P21333.fasta").
 Ventana igual a 10 y con probabilidad de 23%.
 
 ![](https://github.com/cchavezlo/UNSA/blob/master/ComputacionMolecularBiologica/ventana10y023.jpg)
