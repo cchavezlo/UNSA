@@ -72,11 +72,11 @@ def dotplot(seq1,seq2,w,t):
 
 
 
-sequences = SeqIO.parse("Q8BTM8m.fasta.txt","fasta")
+sequences = SeqIO.parse("Q8BTM8.fasta.txt","fasta")
 for record in sequences:
     data1=str(record.seq.upper())
     
-sequences = SeqIO.parse("P21333.fasta.txt","fasta")
+sequences = SeqIO.parse("Q60FE5.fasta","fasta")
 for record in sequences:
     data2=str(record.seq.upper())
 
