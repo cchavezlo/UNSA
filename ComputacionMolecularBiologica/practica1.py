@@ -26,7 +26,7 @@ def plotMatrix(M,t, seq1, seq2):
     plt.scatter(xs, ys)
     plt.show()
 
-def dotplot(seq1,seq2,k = 25,t = 0.5):
+def dotplot(seq1,seq2,k = 10,t = 1):
     M = makeMatrix(seq1,seq2,k)
     plotMatrix(M, t, seq1,seq2) #experiment with character choice
 
