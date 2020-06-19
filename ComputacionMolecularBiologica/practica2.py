@@ -119,4 +119,3 @@ data3="AAG"
 data4="AGC"
 
 
-dinamic(data3,data4)
