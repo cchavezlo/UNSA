@@ -119,3 +119,4 @@ data3="AAG"
 data4="AGC"
 
 
+dinamic(data4,data3)
