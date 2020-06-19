@@ -81,7 +81,7 @@ for record in sequences:
     data2=str(record.seq.upper())
 
 threshold=15 #porcentaje
-window=50
+window=50 
 
 threshold=threshold*window/100
 
